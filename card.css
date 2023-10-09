@@ -1,0 +1,45 @@
+body {
+    background-color: #F8F2F7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    text-align: center;
+}
+
+.circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #BEC0E1;
+    border: 3px solid #E2D2E0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: adobe-garamond-pro, "Cormorant Garamond", serif;
+    color: #9A7E9F;
+    font-size: 10px;
+}
+
+.circle div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.airplane {
+    background-color: #BEC0E1;
+}
+
+.airplane img {
+    width: 65px;
+    height: 65px;
+}
