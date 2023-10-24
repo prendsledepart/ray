@@ -34,12 +34,3 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-.airplane {
-    background-color: #BEC0E1;
-}
-
-.airplane img {
-    width: 65px;
-    height: 65px;
-}
