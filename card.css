@@ -1,6 +1,6 @@
 @font-face {
     font-family:"ChenYuluoyan";
-    src: url(“https://github.com/Chenyu-otf/chenyuluoyan_thin/re...GitHubhttps://github.com › download › ChenYuluoyan-Thin”) format("truetype");
+    src: url('../ChenYuluoyan-Thin.ttf') format("truetype");
 }
 
 body {
