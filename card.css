@@ -1,3 +1,8 @@
+@font-face {
+    font-family:"ChenYuluoyan";
+    src: url(/Users/imangel2001/Library/Fonts/ChenYuluoyan-Thin.ttf) format("truetype");
+}
+
 body {
     background-color: #F8F2F7;
     display: flex;
@@ -23,7 +28,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: adobe-garamond-pro, "Cormorant Garamond", serif;
+    font-family:"ChenYuluoyan";
     color: #9A7E9F;
     font-size: 10px;
 }
@@ -33,4 +38,67 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.popup {
+    width: 400px; 
+    background: #fff; 
+    border-radius: 6px;
+    position: absolute; 
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #9A7E9F;
+    font-family:"ChenYuluoyan";
+    font-size: 20px;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup { 
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.close {
+    padding: .5rem;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    background: none;
+    border: none;
+    color: #9A7E9F;
+}
+
+.airplane{
+    display: inline-flex;
+    align-items: center;
+    padding: 8px;
+    background: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.airplane:hover {
+    opacity: 1;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+.sun{
+    display: inline-flex;
+    align-items: center;
+    padding: 8px;
+    background: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.sun:hover {
+    opacity: 1;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
 }
