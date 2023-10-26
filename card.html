@@ -83,6 +83,12 @@
     function closePopup(){
         popup.classList.remove("open-popup");
     }
+    
+    let height = window.innerHeight;
+        window.addEventListener('resize', () => {
+        height = window.innerHeight;
+    });
+    
 </script>
         
 </body>
