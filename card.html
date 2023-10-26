@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <div class="circle">
-            <button type="button" class="airplane" onclick="openPopup()">
+            <button type="button" class="airplane" onclick="openPopup('popup1')">
             <svg
                 fill="#FFFFFF" 
                 width="75px" height="75px" 
@@ -22,14 +22,14 @@
                 c0.1-0.1,0.1-0.2,0.1-0.3V40.9l11.7-11.7L47.7,48c0.2,0.6,0.9,1,1.6,0.9c0.3-0.1,0.5-0.2,0.7-0.4c0.3-0.3,0.4-0.6,0.4-1V19.1
                 l6.2-6.2C58.2,11.3,60.9,6,59.4,4.5z"/>
             </svg></button>
-            <div class="popup" id="popup">
-                <button type="button" class="close" onclick="closePopup()">&times;</button>
+            <div class="popup" id="popup1">
+                <button type="button" class="close" onclick="closePopup('popup1')">&times;</button>
                 <h2>Thank You!</h2>
                 <p>Your details has been successfully submitted. Thanks!</p>
             </div>
         </div>
         <div class="circle">
-            <button type="button" class="sun" onclick="openPopup()">
+            <button type="button" class="sun" onclick="openPopup('popup2')">
             <svg
                 fill="#ffffff"
                 width="75px" height="75px"
@@ -55,10 +55,10 @@
                     <path d="M351.1,404.51c-16.87-1.4-69.13-1.38-65.61-26.14,.52-5.5,4.44-12.12,10.6-12.02,22.38,2.95,44.38,10.32,67.31,8.39,33.6-2.31,42.7-55.23,58.71-38.11,12.11,17.44-10.88,35.09-20.94,47.82-13.34,13.04-31.07,21.91-50.07,20.06Z"></path>
                     </g>
             </svg></button>
-            <div class="popup" id="popup">
-                <button type="button" class="close" onclick="closePopup()">&times;</button>
-                <h2>Thank You!</h2>
-                <p>Your details has been successfully submitted. Thanks!</p>
+            <div class="popup" id="popup2">
+                <button type="button" class="close" onclick="closePopup('popup2')">&times;</button>
+                <h2>Angel的寶貝觀察小日記</h2>
+                <p>寶貝 我覺得你就像小太陽一樣。有時候當我不大開心的時候跟你聊一聊之後啊，不知道為什麼就會莫名笑出來了。和你在一起的時候都覺得心情特別好，很多煩惱都沒了呢，因為你總是帶給我很多笑容和溫暖。好像無論發生什麼事，你都會在我旁邊呢。</p>
             </div>
         </div>
         <div class="circle"></div>
@@ -77,10 +77,12 @@
     </div>
 <script>
    let popup = document. getElementById ("popup");
-    function openPopup(){
+    function openPopup(popupId){
+        var popup = document.getElementById(popupId);
         popup.classList.add("open-popup");
     }
-    function closePopup(){
+    function closePopup(popupId){
+        var popup = document.getElementById(popupId);
         popup.classList.remove("open-popup");
     }
     
