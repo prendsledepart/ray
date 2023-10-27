@@ -3,6 +3,15 @@
     src: url("../../ray/ChenYuluoyan-Thin.ttf") format("truetype");
 }
 
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    .popup {
+      width: 80%; /* Adjust the width percentage for smaller screens */
+    }
+  }
+
 body {
     background-color: #F8F2F7;
     display: flex;
